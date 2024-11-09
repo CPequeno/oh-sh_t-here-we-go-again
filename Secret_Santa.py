@@ -20,7 +20,7 @@ def Secret_Santa(people, mails, user_smtp, password_smtp):
         message = MIMEMultipart()
         message['From'] = user_smtp
         message['To'] = receiver
-        message['Subject'] = "🎅🎄 Secret Santa 🎄🎅" # Here, write the subject of your mail
+        message['Subject'] = "🎅🎄 Secret Santa 🎄🎅" # Here, write the subject of your mail.
 
         main = f"Ho ho ho(la), {person}:\n\nYou are the secret Santa of {friend}.\n\nMerry Christmas!"
         # Here, write the body of your mail. Only edit the text without brackets, {person} and {friend} is what the program generates randomly.
